@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>연습하기</title>
+    </head>
+
+    <body>
+        <h1>테이블연습</h1>
+        <table border="3">
+            <thead>
+                <th colspan="6">브랜드</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="5">애플</th>
+                    <td>노키아</td>
+                    <th rowspan="8">삼성</th>
+                    <td>진에어</td>
+                    <th rowspan="4">넥슨</th>
+                    <td>카트라이더</td>
+                </tr>
+                <tr>
+                    <td>샤오미</td>
+                    <td>SK</td>
+                    <td>넷마블</td>
+                </tr>
+                <tr>
+                    <td>코보</td>
+                    <td>OK EN</td>
+                    <td>Rush N Cash</td>
+                </tr>
+                <tr>
+                    <td>천재교육</td>
+                    <td>메가스터디</td>
+                    <td>김밥나라</td>
+                </tr>
+                <tr>
+                    <td>라인</td>
+                    <td>소니</td>
+                    <th rowspan="4">폴바세티</th>
+                    <td>공차</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">네이버</th>
+                    <td>구글</td>
+                    <td>다음</td>
+                    <td>야후</td>
+                </tr>
+                <tr>
+                    <td>오뚜기</td>
+                    <td>삼양</td>
+                    <td>농심</td>
+                </tr>
+                <tr>
+                    <td>두부</td>
+                    <td>전공</td>
+                    <td>냉면</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>2.폼태그 연습하기</h1>
+        <fieldset style="background-color: darkgrey;">
+            <legend>회원가입</legend>
+            <small>*는 필수입력사항 입니다.</small>
+            <form action="" method="get">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th><label for="iid">아이디*&nbsp;&nbsp;&nbsp;</label></th>
+                            <td>
+                                <input type="text" id="iid" name="userid" placeholder="아이디를 입력하세요">&nbsp;<button type="button">중복확인</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="ipw">비밀번호*</label></th>
+                            <td>
+                                <input type="password" id="ipw" name="userpw" placeholder="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="ipw2">비밀번호<br>확인</label></th>
+                            <td>
+                                <input type="password" id="ipw2" name="userpw" placeholder=""> *비밀번호를 다시 입력해주세요.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="iname">롤닉네임*</label></th>
+                            <td>
+                                <input type="text" id="iname" name="username" placeholder="ex)왕 진">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>성별</th>
+                            <td>
+                                <label for="iwoman">여자</label>
+                                <input type=radio id="iwoman" name="gender" value="woman" checked="checked">
+                                <label for="iman">남자</label>
+                                <input type=radio id="iman" name="gender" value="man">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>이메일*</th>
+                            <td>
+                                <input type="text" name="emailid">&nbsp;@&nbsp;<input type="text" name="email">
+                                <select name="email">
+                                    <option value="" selected="selected">직접입력</option>
+                                    <option value="naver">naver.com</option>
+                                    <option value="google">gmail.com</option>
+                                    <option value="daum">daum.net</option>
+                                    <option value="nate">nate.com</option>
+                                </select>
+                            </td>
+                        <tr>
+                            <th>주소</th>
+                            <td><input type="text" name="address">&nbsp;<button type="button">주소찾기</button></td>
+                        </tr>
+                        <tr>
+                            <th>상세주소</th>
+                            <td><input type="text" name="detailaddress"></td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">휴대폰</th>
+                            <td>
+                                <label for="iskt">SKT</label>
+                                <input type=radio id="iskt" name="telecom" value="sk">
+                                <label for="ikt">KT</label>
+                                <input type=radio id="ikt" name="telecom" value="kt">
+                                <label for="ilg">LGU+</label>
+                                <input type=radio id="ilg" name="telecom" value="lg">
+                                <label for="iec">알뜰폰</label>
+                                <input type=radio id="iec" name="telecom" value="eco">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="phno1">
+                                    <option value="010" selected="selected">010</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="080">080</option>
+                                    <option value="070">070</option>
+                                </select>
+                                 - <input type="number" name="phno2"> - <input type="number" name="phno3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>포지션</th>
+                            <td>
+                                <label for="itop">탑</label>
+                                <input type="checkbox" id="itop" name="inst" value="top">
+                                <label for="imid">미드</label>
+                                <input type="checkbox" id="imid" name="inst" value="mid">
+                                <label for="ibo">바텀</label>
+                                <input type="checkbox" id="ibo" name="inst" value="bottom">
+                                <label for="iju">정글</label>
+                                <input type="checkbox" id="iju" name="inst" value="jungle">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>자기소개*</th>
+                            <td>
+                                <textarea name="resume" style="width: 400px; height: 80px;"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button type="submit">회원가입</button> <button type="reset">다시입력</button>
+            </form>
+        </fieldset>
+    </body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>ex10</title>
+    </head>
+
+    <body style="background-color: rgb(204, 199, 190);">
+        <h1>목차</h1>
+        <ol>
+            <li><a href="./ex01.html">h1-h6태그</a></li>
+            <li><a href="./ex02.html">p,br,hr,strong,em태그</a></li>
+            <li><a href="./ex03.html">ol,ul 태그</a></li>
+            <li><a href="./ex04.html">img a 태그</a></li>
+            <li><a href="./ex05.html">table, tr, td 태그</a></li>
+            <li><a href="./ex06.html">table 합치기</a></li>
+            <li><a href="./ex07.html">thead, tbody, tfoot 태그</a></li>
+            <li><a href="./ex08.html">table연습문제</a></li>
+            <li><a href="./ex09_resume.html" target="_blank">resume만들기</a></li>
+            <li><a href="./ex10.html">Form태그</a></li>
+        </ol>
+        <hr>
+
+        <h1>1. 각 태그알아보기</h1>
+        ID <input type="text" name="uid"><br> <!--uid에 값을 담아달라 그렇게 받겟다-->
+        PW <input type="password" namer="upw">
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTak-SWk5sLd_mxrbY3aqg-hz9NVDzY2AqHLwCi_1taVKnPYW6bGG1QK60iO6I9qZrZHv0&usqp=CAU" style="width: 30px; height: 15px;"></button><BR>
+        <!-- <input type="button" value="로그인">  추천하지않음 -->
+
+        <h1>2. 보낼영역지정(form)</h1>
+        <form>
+        ID <input type="text" name="uid"><br>
+        PW <input type="password" name="upw">
+        <button type="submit">로그인</button><!--이모든걸 묶어주는게 form-->
+        </form>
+        <!-- submit은 전송, button은 팝업창호출 reset은 초기화 -->
+            
+
+        <h1>3. 보낼곳, 보낼방식 지정하기</h1>
+        <form action="" method="get"> <!--method는 데이터가 가는 방식-->
+            ID <input type="text" name="uid"><br> <!--post는 정보가 안보임-->
+            PW <input type="password" name="upw">
+            <button type="submit">로그인</button>
+        </form>
+
+        <h1>4. Value, placeholder</h1 ><!-- name은 내가 받을 데이터의 이름을 지정, 실제 입력값은 value-->
+        <form action="" method="get"> <!--placeholder는 안내창-->
+            ID <input type="text" name="uid" placeholder="아이디를 입력하세요"><br>
+            PW <input type="password" name="upw" placeholder="비밀번호를 입력하세요"><br>
+            성명 <input type="text" name="uname" value="홍길동" placeholder=이름을 입력하세요><br>
+            <button type="submit">가입</button>
+        </form>
+
+        <h1>5. label, for, id</h1> <!--커서자동이동, 속성id는해당input의이름(작명)-->
+        <form action="" method="post"> <!--placeholder는 안내창-->
+
+            <label for="idinput">아이디</label>
+            <input type="text" id="idinput" name="uid" placeholder="아이디를 입력하세요"><br>
+
+            <label for="pwinput">비밀번호</label>
+            <input type="password" id="pwinput" name="upw" placeholder="비밀번호를 입력하세요"><br>
+
+            <button type="submit">가입</button>
+        </form>
+
+        <h1>6.checkbox, radiobox</h1><!--name은 대체로 내가 받을 카테고리, value는 입력값,정해진경우값본질-->
+        <form action="" method="get">
+            <label for="iname"></b>이름</b></label>
+            <input type="text" id="iname" name="uname" placeholder="이름을 입력하세요"><br>
+            <b>취미 :</b> <small>(중복선택가능)</small><br>
+            <label for="ibook">독서</label>
+            <input type="checkbox" id="ibook" name="hobby" value="book">
+
+            <label for="imusic">음악</label>
+            <input type="checkbox" id="imusic" name="hobby" value="music" checked="checked">
+            
+            <label for="itrip">여행</label>
+            <input type="checkbox" id="itrip" name="hobby" value="trip"><br>
+            
+
+            <b>취향 :</b> <small>(중복선택가능)</small><br>
+            <label for="is">수빈</label>
+            <input type="checkbox" id="is" name="JJB" value="soobin">
+        
+            <label for="iy">연준</label>
+            <input type="checkbox" id="iy" name="JJB" value="yeonjun">
+
+            <label for="it">태현</label>
+            <input type="checkbox" id="it" name="JJB" value="taehyun"><br>
+
+            <b>성별 :</b><br>
+            <label for="iman">남자</label>
+            <input type="radio" id="iman" name="gender" value="man">
+
+            <label for="iwoman">여자</label>
+            <input type="radio" id="iwoman" name="gender" value="woman" checked="checked"><br>
+
+            <b>내국인, 외국인 :</b><br>
+            <label for="iko">내국인</label>
+            <input type="radio" id="iko" name="nation" value="korean" checked="checked">
+            <label for="ifo">외국인</label>
+            <input type="radio" id="ifo" name="nation" value="foreigner">
+
+            <button type="submit">제출</button>
+        </form>
+        
+        <h1>7. select 태그</h1>
+
+        <form action="" method="get">
+            
+            <b>혈액형 :</b><br>
+            <select name=ubloodtype>
+                <option value="" selected="selected">혈액형</option>
+                <option value="A">A형</option>
+                <option value="B">B형</option>
+                <option value="O">O형</option>
+                <option value="AB">AB형</option>
+            </select><br>
+
+            <b>출생지 :</b><br>
+            <select name="hometown">
+                <option value="" selected="selected">지역</option>
+                <option value="seoul">서울 특별시</option>
+                <option value="busan">부산 광역시</option>
+                <option value="daegu">대구 광역시</option>
+                <option value="daejeon">대전 광역시</option>
+                <option value="etc">기타</option>
+            </select><br>
+
+            <b>통신사:</b><br>
+            <select name="telecom">
+                <option value="" selected="selected">이동통신사</option><!--이데이터를안보내려면? 자바스크립트-->
+                <option value="sk">SKT</option>
+                <option value="lg">LG</option>
+                <option value="kt">KT</option>
+                <option value="etc">알뜰폰/기타</option>
+            </select>
+
+            <button type="submit">제출</button>
+        </form>
+
+        <h1>8. textarea</h1>
+        <br>
+        <textarea name="contents">내용을 지우고 입력하세요.</textarea><!--name값써주기-->
+
+        <h1>9. fieldset, legend</h1>
+
+            <fieldset>
+                <legend>개인 정보</legend>
+                    <form action="" method="get">
+                        <label for="iname">성명</label>
+                        <input type="text" id="iname" name="username" value="" placeholder="ex)홍길동">
+
+                        <label for="iid">ID</label>
+                        <input type="text" id="iid" name="userid" value="" placeholder="아이디를 입력하세요">
+
+                        <label for="ipw">PW</label>
+                        <input type="password" id="ipw" name="userid" value="" placeholder="비밀번호를 입력하세요">
+                      
+                        <button type="submit">제출</button>
+                    </form>
+            </fieldset>
+        
+        
+        
+        
+        <!--         
+        <input type="text"><br>
+        <input type="password"><br>
+        <input type="file"><br>
+        <input type="radio">수빈<br>
+        <input type="checkbox">연준<br>
+        <input type="hidden">
+        <input type="date"><br>
+        <input type="color">
+        <input type="number">
+         -->
+         <!--영역잡고 컨트롤/-->
+
+    </body>
+
+</html>

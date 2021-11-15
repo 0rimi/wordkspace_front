@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <style>
+            table{
+                border: 2px solid #888888;
+                border-collapse: collapse; /*테이블 사이 간격 없애주기*/
+                }
+            table>thead{background-color: #dddddd; }
+            table>thead>tr>th, table>tbody>tr>td{
+                text-align:center; border:1px solid #888888
+                }
+            table>tbody>tr:hover{background-color: #ffff00;}        
+            table>tbody>tr>.td{text-align:left;}
+
+        </style>
+    </head>
+
+    <body>
+        <h1>mysite</h1>
+        <h2>게시판</h2>
+        <h3>일반게시판</h3>
+        <h4>리스트</h4>
+
+        <table class="table">
+            <colgroup>
+                <col style="width: 40px;">
+                <col style="width: 350px;">
+                <col style="width: 80px;">
+                <col style="width: 80px;">
+                <col style="width: 80px;">
+                <col style="width: 70px;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>조회수</th>
+                    <th>작성일</th>
+                    <th>관리</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="td">투모로우바이투게더 리더 수빈입니다.</td>
+                    <td>최수빈</td>
+                    <td>1232</td>
+                    <td>001205</td>
+                    <td>모아</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="td">투모로우바이투게더 맏형 연준입니다.</td>
+                    <td>최연준</td>
+                    <td>1232</td>
+                    <td>990913</td>
+                    <td>모아</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="td">투모로우바이투게더 범규입니다.</td>
+                    <td>최범규</td>
+                    <td>1232</td>
+                    <td>010313</td>
+                    <td>모아</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="td">투모로우바이투게더 태현입니다.</td>
+                    <td>강태현</td>
+                    <td>1232</td>
+                    <td>020205</td>
+                    <td>모아</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="td">투모로우바이투게더 막내 휴닝카이입니다.</td>
+                    <td>휴닝카이</td>
+                    <td>1232</td>
+                    <td>020814</td>
+                    <td>모아</td>
+                </tr>
+            </tbody>
+        </table>
+        
+
+    </body>
+
+</html>

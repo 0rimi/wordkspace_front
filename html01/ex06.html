@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>ex06</title>
+    </head>
+        
+    <body>
+        <h1>목차</h1>
+        <ol>
+            <li><a href="./ex01.html">h1-h6태그</a></li>
+            <li><a href="./ex02.html">p,br,hr,strong,em태그</a></li>
+            <li><a href="./ex03.html">ol,ul 태그</a></li>
+            <li><a href="./ex04.html">img a 태그</a></li>
+            <li><a href="./ex05.html">table, tr, td 태그</a></li>
+            <li><a href="./ex06.html">table 합치기</a></li>
+            <li><a href="./ex07.html">thead, tbody, tfoot 태그</a></li>
+            <li><a href="./ex08.html">table연습문제</a></li>
+            <li><a href="./ex09_resume.html" target="_blank">resume만들기</a></li>
+            <li><a href="./ex10.html">Form태그</a></li>
+        </ol>
+        <hr>
+        <h1>1. 선이 없는경우(table)</h1>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+        <h1>2. 선이 있는경우(table="숫자")</h1>
+        <table border="3">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+        <h1>3. 테이블 합치기 가로(colspan="합치는칸수")</h1>
+        <table border="3">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td colspan="3">4</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td colspan="2">8</td>
+            </tr>
+        </table>
+        <h1>4. 테이블 합치기 세로(rowspan="합치는칸수")</h1>
+        <table border="3">
+            <tr>
+                <td rowspan="3">1</td>
+                <td rowspan="2">2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>6</td>
+            </tr>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>    
+        <h1>5. 가로세로 같이 합쳐보기</h1>
+        <table border="3">
+            <tr>
+                <td rowspan="2">1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td colspan="2">5</td>
+            </tr>
+            <tr>
+                <td colspan="3">7</td>
+            </tr>
+        </table>
+        <h1>6. 연습문제</h1>
+        <table border="5">
+            <tr>
+                <td colspan="2">모집직군</td>
+                <td>모집전공</td>
+                <td>비고</td>
+            </tr>
+            <tr>
+                <td colspan="2">생산기술직</td>
+                <td>화학공학</td>
+                <td rowspan="3">전공관련 자격증 우대</td>
+            </tr>
+            <tr>
+                <td rowspan="2">생산지원직</td>
+                <td>공무</td>
+                <td>기계, 전기</td>
+            </tr>
+            <tr>
+                <td>안전환경</td>
+                <td>안전, 환경</td>
+            </tr>
+            <tr>
+                <td colspan="2">연구개발직</td>
+                <td>화학, 화학공학</td>
+                <td>석사</td>
+            </tr>
+        </table>   
+    </body>
+</html>

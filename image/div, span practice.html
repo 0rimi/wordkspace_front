@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>div, span, form</title>
+    </head>
+
+    <body>
+        <h1>1. div태그</h1>
+        <div>개</div>
+        <div>고양이</div>
+        <div>새</div>
+
+        <h1>2. span 태그</h1>
+        <span>개</span>
+        <span>고양이</span>
+        <span>새</span>
+
+        <h1>3.form 태그</h1>
+        <form acion="search.jsp" method="get">
+            <input type="text" name="keyword">
+            <input type="submit" value="검색">
+        </form>      
+        <form acion="search.jsp" method="post">
+            <input type="text" name="keyword">
+            <input type="submit" value="검색">
+        </form> 
+        <form action="login.jsp" method="get">
+            <lable for="u-id">아이디</lable>
+            <input type="text" id="u-id" name="userid" value="" placeholder="아이디">
+            <lable for="u-pw">비밀번호</lable>
+            <input type="password" id="u-pw" name="userpw" value="" placeholder="비밀번호">
+            <button type="submit">로그인</button>
+        </form> 
+    </body>
+</html>

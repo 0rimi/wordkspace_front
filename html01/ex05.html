@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>ex05</title>
+    </head>
+
+    <body style="background-color: rgb(253, 224, 224);">
+        <h1>목차</h1>
+        <ol>
+            <li><a href="./ex01.html">h1-h6태그</a></li>
+            <li><a href="./ex02.html">p,br,hr,strong,em태그</a></li>
+            <li><a href="./ex03.html">ol,ul 태그</a></li>
+            <li><a href="./ex04.html">img a 태그</a></li>
+            <li><a href="./ex05.html">table, tr, td 태그</a></li>
+            <li><a href="./ex06.html">table 합치기</a></li>
+            <li><a href="./ex07.html">thead, tbody, tfoot 태그</a></li>
+            <li><a href="./ex08.html">table연습문제</a></li>
+            <li><a href="./ex09_resume.html" target="_blank">resume만들기</a></li>
+            <li><a href="./ex10.html">Form태그</a></li>
+        </ol>
+        <hr>
+        <table border="5">
+           <tr>
+                <td>이름</td>
+                <td width="100px"></td>
+                <td>연락처</td>
+                <td width="100px"></td>
+           </tr>
+           <tr>
+               <td>주소</td>
+               <td colspan="3"></td>
+           </tr>
+           <tr>
+               <td>자기소개</td>
+               <td colspan="3"></td>
+           </tr>
+        </table>
+        <table border="5">
+            <thead style="background-color: rgb(166, 158, 175);">
+                <tr>
+                    <td>방 이름</td>
+                    <td>대상</td>
+                    <td>크기</td>
+                    <td>가격</td>
+                </tr>
+            </thead>
+            <tbody>
+                <caption>요안도라 객실</caption>
+                <tr>
+                    <td>유채방</td>
+                    <td>여성 도미토리</td>
+                    <td rowspan="3">4인실</td>
+                    <td rowspan="4">1인 20,000원</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">동백방</td>
+                    <td>동성 도미토리</td>
+                </tr>
+                <tr>
+                    <td>가족 1팀</td>
+                </tr>
+                <tr>
+                    <td>천혜향방</td>
+                    <td>-</td>
+                    <td>2인실</td>
+                </tr>
+            </tbody>
+            <tfoot style="background-color: rgb(166, 158, 175);">
+                <tr>
+                    <td colspan="4">바깥채 전체를 렌트합니다</td>
+                </tr>
+            </tfoot>
+        </table>
+        <table border="5">
+            <caption>
+                1인당 연간 설탕 소비량 <small>(단위:kg)</small>
+            </caption>
+            <colgroup>
+                <col style="background-color:rgb(207, 207, 207);">
+                <col>
+            </colgroup>
+            <tr>
+                <td width="130px">WHO권장량</td>
+                <td width="100px">18.25</td>
+            </tr>
+            <tr>
+                <td>한국</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>중국</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>싱가포르</td>
+                <td>58</td>
+            </tr>
+        </table>
+    </body>
+</html>

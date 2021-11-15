@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <style>
+            button{
+                width: 80px; height: 30px;
+                border: 1px solid #000000;
+                border-radius:5px;
+                font-family:나눔고딕; font-weight: bold;
+                text-align:center
+                }
+            button:hover{background-color: yellow;}
+            .해보기{
+                width: 80px; height: 30px;
+                /* font-family:나눔고딕; font-weight: bold; */
+                background-color: rgb(168, 168, 168);
+                border:1px solid #000000;
+                border-radius:5px;
+                margin-bottom:3px;
+                display: table-cell;
+                text-align:center; vertical-align:middle; /*블록형식에선 안먹힘*/
+                }
+            #red{background-color: rgb(233, 179, 173);
+                border-color:tomato;
+                margin-bottom:3px;
+                }
+            #blue{background-color: rgb(178, 221, 238);
+                border-color:rgb(95, 210, 255);
+                margin-bottom:3px;
+                }
+          
+        </style>
+    </head>
+
+    <body>
+        
+        <!-- <form action="" method="get">
+            <button id="black" type="submit">저장버튼</button><br>
+            <button id="red" type="submit">삭제버튼</button><br>
+            <button id="blue" type="submit">수정버튼</button>
+        </form>     -->
+
+        
+        <!-- <div><button id="black" type="button">저장버튼</button></div>
+        <div><button id="red" type="button">삭제버튼</button></div>
+        <div><button id="blue" type="button">수정버튼</button></div>
+         -->
+
+        <div class="black">저장버튼</div>
+        <button id="red" type="button">삭제버튼</button><br>
+        <button id="blue" type="button">수정버튼</button><br>
+         
+
+    </body>
+
+</html>
